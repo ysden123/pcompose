@@ -12,7 +12,7 @@ plugins {
 }
 
 group = "com.stulsoft.pcompose"
-version = "1.0-SNAPSHOT"
+version = "1.0.0"
 
 repositories {
     google()
@@ -43,7 +43,7 @@ compose.desktop {
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "simple-app1"
-            packageVersion = "1.0.0"
+            packageVersion = version.toString()
         }
     }
 }
